@@ -39,7 +39,7 @@ const options = {
                   <img src="https://image.tmdb.org/t/p/w500${_poster_path}">
                   <h3>${_title}</h3>
                   <p>${_overview}</p>
-                  <p>Rating: ${_vote_average}</p>
+                  <p class="rate">Rating: ${_vote_average}</p>
               </div>
             `;
           // 가장 마지막 노드에 붙여주기
@@ -53,6 +53,9 @@ const options = {
             // card 속성
             let movieId = this.getAttribute("data-id");
             alert(`영화 id: ${movieId}`);
+
+            // 페이지 이동 (new page)
+            window.open('./sub.html');
           });
         });
       }

@@ -1,3 +1,6 @@
+* {
+	box-sizing: border-box;
+}
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -17,6 +20,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	cursor: default;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -40,4 +44,71 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+a {
+	text-decoration: none;
+	color: #333;
+	cursor: pointer;
+}
+
+/* ================================================ */
+
+/* header part */
+#header {
+    background-color: #99ccff;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    padding: 30px 0;
+}
+#header h1 a {
+    font-size: 23px;
+    margin-right: 40px;
+    font-weight: 600;
+}
+#header h1 .intro {
+    font-size: 12px;
+    font-weight: 400;
+}
+#header .dropBox {
+    position: absolute;
+    top: 18px;
+    left: 20px;
+}
+#header .dropBox .naBtn {
+    background: #fff;
+    border-radius: 5px;
+    padding: 1px;
+    transition: 0.3s;
+    cursor: pointer;
+    margin-bottom: 3px;
+	padding-right: 116px;
+	font-weight: 600;
+}
+#header .dropBox .naBtn:hover {
+    background: #333;
+    color: #fff;
+}
+#header .dropBox .dropDown {}
+#header .dropBox .dropDown button {
+    background: #fff;
+    border-radius: 5px;
+    padding: 1px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+#header .dropBox .dropDown button:hover {
+    background: #333;
+    color: #fff;
+}
+
+/* footer */
+#footer {
+    position: fixed;
+    bottom: 3px;
+    right: 6px;
+}
+#footer p {
+    font-weight: 600;
+    font-size: 10px;
 }
