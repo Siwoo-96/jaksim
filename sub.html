@@ -1,51 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>영화정보</title>
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/sub.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/sub.css" />
+  </head>
+  <body>
     <header id="header">
-        <h1>
-            <a href="./index.html">JakSim3 
-                <span class="intro">최고 평점 영화 컬렉션</span>
-            </a>
-        </h1>
+      <h1>
+        <a href="./index.html"
+          >JakSim3
+          <span class="intro">최고 평점 영화 컬렉션</span>
+        </a>
+      </h1>
 
-        <!-- 언어 선택 -->
-        <div class="dropBox">
-            <button type="button" class="naBtn" id="nation">국가</button>
-            <div class="dropDown hidden">
-              <button type="button" id="nationBtn">한국</button>
-              <button type="button" id="nationBtn">미국</button>
-              <button type="button" id="nationBtn">중국</button>
-              <button type="button" id="nationBtn">일본</button>
-            </div>
+      <!-- 언어 선택 -->
+      <div class="dropBox">
+        <button type="button" class="naBtn" id="nation">국가</button>
+        <div class="dropDown hidden">
+          <button type="button" id="nationBtn">한국</button>
+          <button type="button" id="nationBtn">미국</button>
+          <button type="button" id="nationBtn">중국</button>
+          <button type="button" id="nationBtn">일본</button>
         </div>
+      </div>
     </header>
 
     <main id="container" class="main">
-        <div class="subBox">
-            <img src="" alt="" />
-            <div class="txtBox">
-                <p></p>
-            </div>
-
-            <!-- 리뷰 작성 기능 공간 -->
-            <div class="comment"></div>
+      <div class="subBox">
+        <img src="" alt="" />
+        <div class="txtBox">
+          <p></p>
         </div>
+
+        <!-- 리뷰 작성 기능 공간 -->
+        <div class="comment"></div>
+      </div>
     </main>
 
     <footer id="footer">
-        <p>made by JakSim3Jo</p>
+      <p>made by JakSim3Jo</p>
     </footer>
 
     <!-- script part -->
-    <script src="./js/movieApi.js"></script>
-    <script src="./js/sub.js"></script>
-</body>
+    <script src="./js/movieAPI.js"></script>
+    <script src="./js/cardView.js"></script>
+    <script src="./js/review.js"></script>
+    <script src="./js/datailView.js"></script>
+  </body>
 </html>
