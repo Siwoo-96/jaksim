@@ -1,2 +1,3 @@
-// 상세페이지 데이터 view
+import { movieData } from "./movieAPI.js";
+
 function datailView() {}

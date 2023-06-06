@@ -1,10 +1,10 @@
-import { movieData } from "./movieAPI";
+import { movieData } from "./movieAPI.js";
 
-function cardView() {
-  let data = movieData();
-  console.log(data);
+async function cardView() {
   const cardList = document.querySelector(".cardList");
   cardList.innerHTML = "";
+  let data = await movieData();
+  let cardData = [];
 
   //가져온 api의 데이터들을 할당시켜주기
   data.forEach((x) => {
@@ -23,8 +23,11 @@ function cardView() {
               <p class="rate">Rating: ${_vote_average}</p>
           </div>
         `;
-    // 가장 마지막 노드에 붙여주기
+
+    cardData.push(temp_html);
     cardList.insertAdjacentHTML("beforeend", temp_html);
+    // 가장 마지막 노드에 붙여주기
+    // cardList.insertAdjacentHTML("beforeend", temp_html);
   });
 }
 
