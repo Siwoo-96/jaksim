@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script type="module" src="./js/testReview.js"></script> -->
+    <script type="module" src="./js/main.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <form id="comment-form" class="comment-form">
+        <div>
+            <label>댓글: </label>
+            <textarea id="content" name="story" rows="5" cols="33"></textarea>
+        </div>
+        <div>
+            <label>사용자 ID: </label>
+            <input type="text" id="user-id" required>
+        </div>
+        <div>
+            <label>사용자 PW: </label>
+            <input type="password" id="user-password" required>
+        </div>
+        <div>
+            <button type="submit">댓글달기</button>
+        </div>
+    </form>
+    <div id="comment-list" style="display: flex;">
+
+    </div>
+</body>
+
+</html>
