@@ -1,4 +1,4 @@
-import { movieData } from "./movieAPI.js";
+import { movieData } from "./movieApi.js";
 
 async function cardView() {
   const cardList = document.querySelector(".cardList");
@@ -17,3 +17,5 @@ async function cardView() {
     .join("");
 }
 cardView();
+
+export { cardView };
