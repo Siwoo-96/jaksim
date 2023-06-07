@@ -66,6 +66,15 @@ function movieSearch(mes) {
     }
   });
 }
+const search_btn = document.querySelector("#searchBtn");
+
+search_btn.addEventListener('click', (event) => {
+  let mes = document.getElementById("searchInput").value.toLowerCase();
+  if (event.key === 'Enter') {
+    return;
+  }
+  movieSearch(mes);
+})
 
 document.addEventListener('keyup', function (event) {
   let mes = document.getElementById("searchInput").value.toLowerCase();
