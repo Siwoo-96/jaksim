@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../../../git_project/movie_serch"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "jaksim"
+	}
+}
