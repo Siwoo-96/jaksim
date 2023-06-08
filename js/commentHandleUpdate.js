@@ -1,6 +1,7 @@
-import { db } from "./main.js";
+import { db } from "./subApp.js";
 import { Comment } from "./Comment.js";
 
+// 수정버튼 누른 후 나오는 수정창
 function renderUpdatedComment(commentObj) {
     const { id, content, userId, userPassword } = commentObj;
     const comment = document.getElementById(id);
@@ -26,6 +27,7 @@ function renderUpdatedComment(commentObj) {
     comment.addEventListener("click", handleUpdateComment);
 }
 
+// 댓글 수정 핸들링
 function handleUpdateComment({ target }) {
     if (target.id !== "update-btn" && target.id !== "cancel-submit-btn") {
         return;
@@ -39,6 +41,7 @@ function handleUpdateComment({ target }) {
     let userPassword;
     let regDate;
 
+    // 댓글 수정을 했을 경우
     if (target.id === "update-btn") {
         content = document.querySelector("#update-content").value;
         userId = document.querySelector("#update-user-id").value;
@@ -48,6 +51,7 @@ function handleUpdateComment({ target }) {
         db.update(commentObj.attributes);
         alert("update");
     }
+    // 댓글 수정 취소했을 경우
     if (target.id === "cancel-submit-btn") {
         const data = db.load(id);
         content = data.content;

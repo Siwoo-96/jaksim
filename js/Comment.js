@@ -7,38 +7,6 @@ class Comment {
         this.regDate = regDate;
     }
 
-    // getCommentId() {
-    //     return this.commentId;
-    // }
-
-    // getUserId() {
-    //     return this.userId;
-    // }
-
-    // getUserComment() {
-    //     return this.userComment;
-    // }
-    
-    // getUserPassword() {
-    //     return this.userPassword;
-    // }
-
-    // setCommentId(commentId) {
-    //     this.commentId = commentId;
-    // }
-
-    // setUserId(id) {
-    //     this.userId = id;
-    // }
-
-    // setUserComment(comment) {
-    //     this.userComment = comment;
-    // }
-
-    // setUserPassword(password) {
-    //     this.userPassword = password;
-    // }
-
     validateId(id) {
         return this.validate(this.id, id);
     }

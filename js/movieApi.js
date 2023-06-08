@@ -1,5 +1,6 @@
 import { cardView } from "./cardView.js";
 
+// movie API
 const URL = 'https://api.themoviedb.org/3';
 const KEY = '52d537b416811d07bd31c6b1ae8d4d5a';
 let BASE_LANG = 'ko';
@@ -24,6 +25,7 @@ async function movieData() {
   return movies;
 }
 
+// select Nation movieAPI
 const nation = document.querySelector("#nation");
 const dropDown = document.querySelector(".dropDown");
 

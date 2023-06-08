@@ -30,16 +30,38 @@
     </header>
 
     <main id="container" class="main">
-      <div class="subBox">
-        <img src="" alt="" />
-        <div class="txtBox">
-          <p></p>
-        </div>
+      <!-- cardView -->
+      <div class="subBox s1"></div>
 
+      <!-- comment -->
+      <div class="subBox s2">
         <!-- 리뷰 작성 기능 공간 -->
-        <div class="comment"></div>
+        <form id="comment-form" class="comment-form">
+          <div>
+              <label>댓글: </label>
+              <textarea id="content" name="story" rows="5" cols="33"></textarea>
+          </div>
+          <div>
+              <label>사용자 ID: </label>
+              <input type="text" id="user-id" required>
+          </div>
+          <div>
+              <label>사용자 PW: </label>
+              <input type="password" id="user-password" required>
+          </div>
+          <div>
+              <button type="submit">댓글달기</button>
+          </div>
+        </form>
       </div>
+      
+      <div class="comment"></div>
     </main>
+
+    
+
+  <!-- 최종 출력되는 곳 -->
+  <div id="comment-list"></div>
 
     <footer id="footer">
       <p>made by JakSim3Jo</p>
@@ -49,6 +71,7 @@
     <!-- <script src="./js/movieAPI.js"></script> -->
     <!-- <script src="./js/cardView.js"></script> -->
     <!-- <script src="./js/review.js"></script> -->
-    <script src="./js/detailView.js"></script>
+    <script type="module" src="./js/detailView.js"></script>
+    <script type="module" src="./js/subApp.js"></script>
   </body>
 </html>

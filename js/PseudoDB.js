@@ -34,15 +34,6 @@ class PseudoDB {
         // console.log(localStorage);
         return JSON.parse(localStorage.getItem(id));
     }
-
-    // loadAll() {
-    //     console.log(Object.entries(this.storage));
-    //     console.log(Object.keys(this.storage));
-    //     console.log(this.storage);
-    //     // for (let i of Object.keys(localStorage)) {
-    //     //     console.log(localStorage.getItem(i));
-    //     // }
-    // }
 }
 
 export { PseudoDB };

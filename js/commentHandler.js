@@ -1,6 +1,7 @@
-import { db } from "./main.js";
+import { db } from "./subApp.js";
 import { Comment } from "./Comment.js";
 
+// 댓글 작성하면 동작하는 부분
 function handleSubmit() {
     const content = document.querySelector("#content").value;
     const userId = document.querySelector("#user-id").value;

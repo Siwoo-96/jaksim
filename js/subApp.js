@@ -1,10 +1,14 @@
+// import
 import { PseudoDB } from "./PseudoDB.js";
 import { handleSubmit } from "./commentHandler.js";
 import { handleCommentEdit } from "./commentHandleEdit.js";
 
+// export
 export const db = new PseudoDB();
 localStorage.clear();
 
+
+// start
 const commentForm = document.querySelector("#comment-form");
 commentForm.addEventListener("submit", (event) => {
     event.preventDefault();
