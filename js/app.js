@@ -1,10 +1,13 @@
 import { cardView } from "./cardView.js";
+import { chooseRegion } from "./lang.js";
+import { searchMovie } from "./searchMovie.js";
 
-const URL = 'https://api.themoviedb.org/3';
-const KEY = '52d537b416811d07bd31c6b1ae8d4d5a';
-let BASE_LANG = 'ko';
-let BASE_REGION = 'KR';
+document.addEventListener("DOMContentLoaded", () => {
+    cardView("ko-KR");
+    const dropDown = document.querySelector(".dropDown");
+    dropDown.addEventListener("click", chooseRegion);
 
+<<<<<<< HEAD
 async function movieData() {
   const options = {
     method: "GET",
@@ -76,3 +79,11 @@ document.addEventListener('keyup', function (event) {
 })
 
 export { movieData };
+=======
+    document.addEventListener("keyup", function (event) {
+        let mes = document.getElementById("searchInput").value.toLowerCase();
+    
+        searchMovie(mes);
+    });
+});
+>>>>>>> 0054cb14b042529ae8ee026df0b6a52cb47ce782
