@@ -62,10 +62,10 @@ function handleUpdateComment({ target }) {
     }
 
     comment.innerHTML = `
-        <div>${content}</div>
-        <div>${userId}</div>
-        <div>${userPassword}(원래 이 값은 안보여야 함)</div>
-        <div>${regDate}</div>
+        <div class="content">${content}</div>
+        <div class="userId">${userId}</div>
+        <div class="userPw">${userPassword}</div>
+        <div class="reg">${regDate}</div>
         <button class="edit">수정</button>
         <button class="delete">삭제</button>
     `;
