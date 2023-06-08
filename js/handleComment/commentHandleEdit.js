@@ -11,13 +11,11 @@ function handleCommentEdit({ target }) {
         const { id, content, userId, userPassword, regDate } = db.load(
             target.parentNode.id
         );
-        // const data = db.load(target.parentNode.id);
         const comment = new Comment(id, content, userId, userPassword, regDate);
         let password = prompt("비밀번호를 입력하세요", "비밀번호 모르겠쥬?");
 
         // 패스워드 검사
         if (comment.validatePassword(password)) {
-            // alert("페이지 렌더링");
             renderUpdatedComment(comment.attributes);
         } else {
             alert("비밀번호 틀렸쥬? 노망나서 생각 안나쥬?");
