@@ -1,5 +1,7 @@
 import { db } from "../subApp.js";
 import { Comment } from "./Comment.js";
+// import from "../../css/sub.css";
+
 
 // 댓글 작성하면 동작하는 부분
 function handleSubmit() {
@@ -23,11 +25,11 @@ function renderComment(commentObj) {
     const { id, content, userId, userPassword, regDate } = commentObj;
     const commentList = document.querySelector("#comment-list");
     commentList.innerHTML += `
-        <div id="${id}" class="comment" style="padding:10px;">
-            <div>${content}</div>
-            <div>${userId}</div>
-            <div>${userPassword}(원래 이 값은 안보여야 함)</div>
-            <div>${regDate}</div>
+        <div id="${id}" class="comment">
+            <div class="content">${content}</div>
+            <div class="userId">${userId}</div>
+            <div class="userPw">${userPassword}</div>
+            <div class="reg">${regDate}</div>
             <button class="edit">수정</button>
             <button class="delete">삭제</button>
         </div>

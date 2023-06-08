@@ -1,0 +1,192 @@
+.main {
+    padding: 20px;
+}
+.main .subBox {}
+.main .subBox.s1 {
+    margin-bottom: 30px;
+    text-align: center;
+    padding: 20px;
+    border: 3px solid #999;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.main .subBox.s1 img {
+    width: 300px;
+    height: 400px;
+    margin-bottom: 25px;
+}
+.main .subBox.s1 h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.main .subBox.s1 p {
+    width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+    font-size: 16px;
+}
+.main .subBox.s1 p.rate {
+    margin-top: 20px;
+    font-weight: 600;
+    text-align: right;
+    font-size: 14px;
+}
+
+/* comment form part */
+.main .subBox.s2 {
+    text-align: right;
+    margin-top: 60px;
+}
+.main .subBox.s2 h4 {
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 12px;
+}
+.main .subBox.s2 .commentForm {}
+.main .subBox.s2 .commentForm .writeBox {
+    margin-bottom: 10px;
+}
+.main .subBox.s2 .commentForm .writeBox label {}
+.main .subBox.s2 .commentForm .writeBox textarea {
+    
+}
+
+.main .subBox.s2 .commentForm .secureBox {
+    margin-bottom: 5px;
+}
+.main .subBox.s2 .commentForm .secureBox label {
+    font-weight: 500;
+    font-size: 12px;
+}
+.main .subBox.s2 .commentForm .secureBox textarea {}
+
+.main .subBox.s2 .commentForm .btnBox {}
+.main .subBox.s2 .commentForm .btnBox button {
+    background: none;
+    border-radius: 5px;
+    padding: 5px;
+    font-weight: 600;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.main .subBox.s2 .commentForm .btnBox button:hover {
+    background: #333;
+    color: #fff;
+}
+
+/* ============================================ */
+
+/* commentForm part */
+.commentForm {}
+.commentForm .writeBox {}
+.commentForm .writeBox label {
+    font-weight: 600;
+}
+.commentForm .writeBox textarea {
+    border-radius: 10px;
+    border: 2px solid #666;
+}
+
+.commentForm .secureBox.b1 {}
+.commentForm .secureBox.b1 label {}
+.commentForm .secureBox.b1 textarea {
+    border-radius: 10px;
+    border: 2px solid #666;
+}
+
+.commentForm .secureBox.b2 {}
+.commentForm .secureBox.b2 label {}
+.commentForm .secureBox.b2 textarea {
+    border-radius: 10px;
+    border: 2px solid #666;
+}
+
+.commentForm .btnBox {
+    margin-top: 10px;
+}
+.commentForm .btnBox .writeBtn {
+    background: none;
+    border-radius: 5px;
+    transition: 0.3s;
+    cursor: pointer;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+.commentForm .btnBox .writeBtn:hover {
+    background: #333;
+    color: #fff;
+}
+
+
+/* =================================== */
+/* update css */
+.comment {
+    margin: 0 auto;
+    width: 500px;
+    font-weight: 600;
+    font-size: 15px;
+    margin-top: 50px;
+    padding: 9px;
+    border: 5px solid #777;
+    border-radius: 10px;
+
+}
+.comment .content {
+    margin: 0 auto;
+    width: 400px;
+    margin-bottom: 10px;
+    border: 2px solid #777;
+    border-radius: 5px;
+    padding: 5px;
+}
+.comment .userId {
+    margin: 0 auto;
+    width: 400px;
+    margin-bottom: 10px;
+    border: 2px solid #777;
+    border-radius: 5px;
+    padding: 5px;
+}
+.comment .userPw {
+    margin: 0 auto;
+    width: 400px;
+    margin-bottom: 10px;
+    border: 2px solid #777;
+    border-radius: 5px;
+    padding: 5px;
+}
+.comment .reg {
+    margin: 0 auto;
+    width: 400px;
+    margin-bottom: 20px;
+    border: 2px solid #777;
+    border-radius: 5px;
+    padding: 5px;
+}
+.edit {
+    margin-top: 20px;
+    background: none;
+    border-radius:5px;
+    padding:5px;
+    font-weight:600;
+    transition: 0.3s;
+    cursor: pointer;
+
+}
+.edit:hover {
+    background: #333;
+    color: #fff;
+}
+.delete {
+    background: none;
+    border-radius:5px;
+    padding:5px;
+    font-weight:600;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.delete:hover {
+    background: #333;
+    color: #fff;
+}

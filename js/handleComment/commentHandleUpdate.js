@@ -6,19 +6,19 @@ function renderUpdatedComment(commentObj) {
     const { id, content, userId, userPassword } = commentObj;
     const comment = document.getElementById(id);
     comment.innerHTML = `
-        <div>
+        <div class="writeBox">
             <label>댓글: </label>
             <textarea id="update-content" name="story" rows="5" cols="33">${content}</textarea>
         </div>
-        <div>
+        <div class="secureBox b1">
             <label>사용자 ID: </label>
             <input type="text" id="update-user-id" value="${userId}" disabled>
         </div>
-        <div>
+        <div class="secureBox b2">
             <label>사용자 PW: </label>
             <input type="password" id="update-user-password" value="${userPassword}" required>
         </div>
-        <div>
+        <div class="btnBox">
             <button id="update-btn">수정</button>
             <button id="cancel-submit-btn">취소</button>
         </div>
