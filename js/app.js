@@ -7,9 +7,15 @@ document.addEventListener("DOMContentLoaded", () => {
     const dropDown = document.querySelector(".dropDown");
     dropDown.addEventListener("click", chooseRegion);
 
-    document.addEventListener("keyup", function (event) {
-        let clk = document.getElementById("searchInput").value.toLowerCase();
-    
-        searchMovie(clk);
+    const searchForm = document.querySelector("#search-form");
+    searchForm.addEventListener("submit", (event) => {
+        event.preventDefault();
+        const keyword = document.querySelector("#searchInput").value;
+        searchMovie(keyword);
+    });
+
+    const searchTitle = document.querySelector("#searchInput");
+    searchTitle.addEventListener("keyup", () => {
+        searchMovie(searchTitle.value);
     });
 });

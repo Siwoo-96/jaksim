@@ -34,16 +34,13 @@
       <!-- 영화 검색 -->
       <form
         class="search"
-        action="./index.html"
-        method="POST"
-        onsubmit="movieSearch()"
+        id="search-form"
       >
         <label id="search">영화 검색 : </label>
         <input
           type="text"
           id="searchInput"
           placeholder="영화제목을 입력해주세요^^"
-          required
         />
         <button type="submit" id="searchBtn">검색</button>
       </form>
@@ -60,7 +57,6 @@
 
     <!-- script part -->
     <script src="./js/app.js" type="module"></script>
-    <script src="./js/cardView.js" type="module"></script>
   </body>
   </body>
 </html>
