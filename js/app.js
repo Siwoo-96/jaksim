@@ -53,14 +53,14 @@ dropDown.addEventListener('click', (event) => {
 
 
 // search
-function movieSearch(mes) {
+function movieSearch(clk) {
   const movieCards = document.querySelectorAll(".movieCard");
 
   movieCards.forEach((card) => {
     const title = card.childNodes[2]['nextSibling']['innerText'].split(' ').join('').toLowerCase();
 
     for (let i = 0; i < title.length; i++) {
-      if (title.includes(`${mes}`)) {
+      if (title.includes(`${clk}`)) {
         card.style.display = "grid";
       } else {
         card.style.display = "none";
@@ -70,10 +70,9 @@ function movieSearch(mes) {
 }
 
 document.addEventListener('keyup', function (event) {
-  let mes = document.getElementById("searchInput").value.toLowerCase();
+  let clk = document.getElementById("searchInput").value.toLowerCase();
 
-  movieSearch(mes);
+  movieSearch(clk);
 })
-// fetch가 리턴을 기다리지 않고 뱉어버려서 -> 그림판
 
 export { movieData };
