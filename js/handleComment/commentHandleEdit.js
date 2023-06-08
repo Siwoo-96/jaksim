@@ -1,4 +1,4 @@
-import { db } from "./subApp.js";
+import { db } from "../subApp.js";
 import { Comment } from "./Comment.js";
 import { renderUpdatedComment } from "./commentHandleUpdate.js";
 

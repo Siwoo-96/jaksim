@@ -1,4 +1,4 @@
-import { db } from "./subApp.js";
+import { db } from "../subApp.js";
 import { Comment } from "./Comment.js";
 
 // 수정버튼 누른 후 나오는 수정창

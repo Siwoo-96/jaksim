@@ -1,4 +1,4 @@
-import { db } from "./subApp.js";
+import { db } from "../subApp.js";
 import { Comment } from "./Comment.js";
 
 // 댓글 작성하면 동작하는 부분
