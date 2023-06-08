@@ -21,7 +21,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const commentList = document.querySelector("#comment-list");
     commentList.addEventListener("click", handleCommentEdit);
-    const comment = document.querySelector("#comment-list");
 });
 
 // start
