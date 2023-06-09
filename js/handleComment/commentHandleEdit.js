@@ -18,7 +18,7 @@ function handleCommentEdit({ target }) {
         if (comment.validatePassword(password)) {
             renderUpdatedComment(comment.attributes);
         } else {
-            alert("비밀번호 틀렸쥬? 노망나서 생각 안나쥬?");
+            alert("비밀번호가 틀렸습니다ㅠ_ㅠ");
         }
     }
     // 삭제 버튼 클릭하면 동작하는 부분

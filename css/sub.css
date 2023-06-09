@@ -132,6 +132,9 @@
     border-radius: 10px;
 
 }
+.comment p {
+    text-align-last: left;
+}
 .comment .content {
     margin: 0 auto;
     width: 400px;

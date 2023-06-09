@@ -62,9 +62,15 @@ function handleUpdateComment({ target }) {
     }
 
     comment.innerHTML = `
-        <div class="content">${content}</div>
-        <div class="userId">${userId}</div>
-        <div class="userPw">${userPassword}</div>
+        <div class="content">
+            <p>댓글 : </p>${content}
+        </div>
+        <div class="userId">
+            <p>아이디 : </p>${userId}
+        </div>
+        <div class="userPw">
+            <p>비밀번호 : </p>${userPassword}
+        </div>
         <div class="reg">${regDate}</div>
         <button class="edit">수정</button>
         <button class="delete">삭제</button>
