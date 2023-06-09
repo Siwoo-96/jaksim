@@ -1,4 +1,12 @@
-async function fetchMovieData(REGION) {
+async function fetchMovieData(page, REGION) {
+    if (page === undefined) {
+        alert(`The parameter page of the function fetchMovieData is ${page}`);
+        return null;
+    }
+    if (REGION === null || REGION === undefined) {
+        REGION = navigator.language;
+    }
+    
     const options = {
         method: "GET",
         headers: {
@@ -8,12 +16,10 @@ async function fetchMovieData(REGION) {
         },
     };
 
-    // const response = await fetch(`https://api.themoviedb.org/3/movie/popular?language=${REGION}&page=1&region=${LANGUAGE}`, options)
     const response = await fetch(
-        `https://api.themoviedb.org/3/movie/popular?language=${REGION}&page=1`,
+        `https://api.themoviedb.org/3/movie/popular?language=${REGION}&page=${page}`,
         options
     );
-    console.log(REGION);
 
     const data = await response.json();
 
