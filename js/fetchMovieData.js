@@ -6,7 +6,7 @@ async function fetchMovieData(page, REGION) {
     if (REGION === null || REGION === undefined) {
         REGION = navigator.language;
     }
-    
+    console.log(`Page ${page} has fetched.`);
     const options = {
         method: "GET",
         headers: {

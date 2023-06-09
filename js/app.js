@@ -3,6 +3,8 @@ import { chooseRegion } from "./lang.js";
 import { searchMovie } from "./searchMovie.js";
 
 let page = 1;
+let curScrollY;
+let prevScrollY;
 
 document.addEventListener("DOMContentLoaded", () => {
     const language = document.querySelector("#lang");
@@ -14,8 +16,6 @@ document.addEventListener("DOMContentLoaded", () => {
         setCardView(1, lang.dataset.lang);
         page = 1;
     });
-    
-    
 
     const searchForm = document.querySelector("#search-form");
     searchForm.addEventListener("submit", (event) => {
@@ -31,9 +31,12 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 document.addEventListener("wheel", (e) => {
-    if (e.deltaY > 0 && (document.body.offsetHeight - window.scrollY) < 1000) {
+    curScrollY = window.scrollY;
+
+    if (e.deltaY > 0 && (curScrollY !== prevScrollY) && (document.body.offsetHeight - window.scrollY < 1000)) {
         const lang = document.querySelector('#lang').dataset.lang;
         page += 1;
         addCardView(page, lang);
     }
+    prevScrollY = curScrollY;
 });
