@@ -5,6 +5,10 @@ import { searchMovie } from "./searchMovie.js";
 let page = 1;
 let curScrollY;
 let prevScrollY;
+let criteria;
+let isOverCriteria = 0;
+let curDocumentHeight;
+let prevDocumentHeight;
 
 document.addEventListener("DOMContentLoaded", () => {
     const language = document.querySelector("#lang");
@@ -32,11 +36,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
 document.addEventListener("wheel", (e) => {
     curScrollY = window.scrollY;
-
-    if (e.deltaY > 0 && (curScrollY !== prevScrollY) && (document.body.offsetHeight - window.scrollY < 1000)) {
+    curDocumentHeight = document.body.offsetHeight;
+    criteria = curDocumentHeight - window.scrollY < 1000;
+    
+    if (curDocumentHeight !== prevDocumentHeight) {
+        isOverCriteria = 0;
+    }
+    if (criteria === true && isOverCriteria === 0) {
+        isOverCriteria = 1;
         const lang = document.querySelector('#lang').dataset.lang;
         page += 1;
         addCardView(page, lang);
     }
+    prevDocumentHeight = curDocumentHeight;
     prevScrollY = curScrollY;
 });
