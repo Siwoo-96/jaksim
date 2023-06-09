@@ -1,4 +1,4 @@
-import { db } from "../subApp.js";
+import { db } from "../subPage/subApp.js";
 import { Comment } from "./Comment.js";
 import { renderUpdatedComment } from "./commentHandleUpdate.js";
 
@@ -12,7 +12,7 @@ function handleCommentEdit({ target }) {
             target.parentNode.id
         );
         const comment = new Comment(id, content, userId, userPassword, regDate);
-        let password = prompt("비밀번호를 입력하세요", "비밀번호 모르겠쥬?");
+        let password = prompt("비밀번호를 입력하세요^^", "비밀번호 기억 나시나요..?");
 
         // 패스워드 검사
         if (comment.validatePassword(password)) {

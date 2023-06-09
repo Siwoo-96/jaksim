@@ -1,4 +1,4 @@
-import { db } from "../subApp.js";
+import { db } from "../subPage/subApp.js";
 import { Comment } from "./Comment.js";
 
 // 수정버튼 누른 후 나오는 수정창
@@ -19,8 +19,8 @@ function renderUpdatedComment(commentObj) {
             <input type="password" id="update-user-password" value="${userPassword}" required>
         </div>
         <div class="btnBox">
-            <button id="update-btn">수정</button>
-            <button id="cancel-submit-btn">취소</button>
+            <button class="edit" id="update-btn">수정</button>
+            <button class="delete" id="cancel-submit-btn">취소</button>
         </div>
     `;
 

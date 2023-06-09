@@ -1,7 +1,7 @@
 import { detailView } from "./detailView.js";
-import { PseudoDB } from "./handleComment/PseudoDB.js";
-import { handleSubmit } from "./handleComment/commentHandler.js";
-import { handleCommentEdit } from "./handleComment/commentHandleEdit.js";
+import { PseudoDB } from "../handleComment/PseudoDB.js";
+import { handleSubmit } from "../handleComment/commentHandler.js";
+import { handleCommentEdit } from "../handleComment/commentHandleEdit.js";
 
 // export
 export const db = new PseudoDB();
@@ -22,5 +22,3 @@ document.addEventListener("DOMContentLoaded", () => {
     const commentList = document.querySelector("#comment-list");
     commentList.addEventListener("click", handleCommentEdit);
 });
-
-// start
