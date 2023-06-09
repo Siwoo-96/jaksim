@@ -1,12 +1,14 @@
-import { fetchMovieData } from "./fetchMovieData.js";
+// import { fetchMovieData } from "./fetchMovieData.js";
+import { queryMovie } from "./queryMovie.js";
 
 async function detailView() {
     const urlParams = new URL(location.href).searchParams;
     const id = Number(urlParams.get("id"));
     const lang = urlParams.get("lang");
-    let movies = await fetchMovieData(lang);
+    const title = urlParams.get("title");
+    const movies = await queryMovie(title, lang);
 
-    // 예외처리
+    // // 예외처리
     const result = movies.find((x) => x.id === id);
     if (!result) {
         alert("페이지의 정보값이 올바르지 않습니다");
