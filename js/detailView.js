@@ -1,4 +1,3 @@
-// import { fetchMovieData } from "./fetchMovieData.js";
 import { queryMovie } from "./queryMovie.js";
 
 async function detailView() {
